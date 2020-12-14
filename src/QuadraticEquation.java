@@ -4,9 +4,19 @@ public class QuadraticEquation {
     private double c;
     private double delta;
 
-    public QuadraticEquation(double a,double b,double c){
+
+    public QuadraticEquation(){
+    }
+
+    public void setA(double a){
         this.a = a;
+    }
+
+    public void setB(double b) {
         this.b = b;
+    }
+
+    public void setC(double c) {
         this.c = c;
     }
 

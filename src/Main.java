@@ -2,15 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập vào a: ");
-        double a = scanner.nextDouble();
-        System.out.println("Nhập vào b: ");
-        double b = scanner.nextDouble();
-        System.out.println("Nhập vào c: ");
-        double c = scanner.nextDouble();
-
-        QuadraticEquation pt1 = new QuadraticEquation(a, b, c);
+        QuadraticEquation pt1 = new QuadraticEquation();
+        pt1.setA(1);
+        pt1.setB(2);
+        pt1.setC(3);
         System.out.println(pt1.disPlay());
         if (pt1.getDiscriminant() > 0) {
             System.out.println("Nghiệm 1: " + pt1.getRoot1());
