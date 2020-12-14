@@ -8,7 +8,7 @@ public class QuadraticEquation {
     public QuadraticEquation(){
     }
 
-    public void setA(double a){
+    public void setA(double a) {
         this.a = a;
     }
 
@@ -21,20 +21,20 @@ public class QuadraticEquation {
     }
 
     public double getDiscriminant(){
-       delta = b*b - 4*a*c;
+       delta = this.b*this.b - 4*this.a*this.c;
        return delta;
     }
 
     public double  getRoot1(){
-        return (-b + Math.pow((b*b - 4*a*c), 0.5))/(2*a);
+        return (-this.b + Math.pow((this.b*this.b - 4*this.a*this.c), 0.5))/(2*this.a);
     }
 
     public double getRoot2(){
-        return (-b - Math.pow((b*b - 4*a*c), 0.5))/(2*a);
+        return (-this.b - Math.pow((this.b*this.b - 4*this.a*this.c), 0.5))/(2*this.a);
     }
 
     public String disPlay() {
-        return "Phương trình bậc 2 có a = " + a + " b = " + b + " c = " + c;
+        return "Phương trình bậc 2 có a = " + this.a + " b = " + this.b + " c = " + this.c;
     }
 
 
